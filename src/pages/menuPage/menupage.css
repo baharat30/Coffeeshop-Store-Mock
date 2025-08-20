@@ -1,0 +1,169 @@
+.menu-page {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.menu-page h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+  color: #3d0808;
+   color: var(--heading-color);
+  font-family: 'Sacramento', cursive;
+}
+
+.menu-section {
+  width: 80%;
+  margin: 15px auto;
+  padding: 20px;
+  background-color: #faeaf1;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-section h2 {
+  font-size: 29px;
+  color: #3d0808;
+  margin-bottom: 10px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 19px;
+  align-items: center;
+}
+
+.menu-item:hover {
+  background-color: #f3dbe6;
+  cursor: pointer;
+}
+
+.item-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-text h3 {
+  color: #444;
+  margin: 0;
+}
+
+.item-text p {
+  color: #555;
+  font-size: 12px;
+  margin: 4px 0 0 0;
+}
+
+.menu-item span {
+  color: #a03e60;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .menu-section {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .menu-item {
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  .item-text h3 {
+    font-size: 16px;
+  }
+
+  .item-text p {
+    font-size: 11px;
+  }
+
+  .menu-item span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu-section {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .menu-item {
+    flex-direction: row; 
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .item-text h3 {
+    font-size: 16px;
+  }
+
+  .item-text p {
+    font-size: 11px;
+  }
+
+  .menu-item span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu-section {
+    width: 95%;
+    padding: 12px;
+  }
+
+  .menu-item {
+    flex-direction: row;
+    padding: 8px;
+  }
+
+  .item-text h3 {
+    font-size: 15px;
+  }
+
+  .item-text p {
+    font-size: 10px;
+  }
+
+  .menu-item span {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-section {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .menu-item {
+    flex-direction: row; 
+    align-items: flex-start;
+    padding: 8px;
+  }
+
+  .menu-item span {
+    margin-top: 4px;
+    font-size: 14px;
+  }
+
+  .item-text h3 {
+    font-size: 14px;
+  }
+
+  .item-text p {
+    font-size: 10px;
+  }
+}
+

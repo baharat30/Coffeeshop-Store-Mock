@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  overflow-x: auto;
+  min-width: 320px;
+  min-height: 100vh;
+  line-height: 1.6;
+  color: #3E2723; 
+  padding-top: 60px; 
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  overflow: auto;
+}
+
+a {
+  color: #3E2723;
+}
+
+.footer {
+  color: #3E2723;
+}

@@ -1,0 +1,16 @@
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #420b10;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 100px auto; /* وسط صفحه */
+  margin-top: 150px!important;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

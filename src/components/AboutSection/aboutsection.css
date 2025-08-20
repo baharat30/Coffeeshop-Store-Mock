@@ -1,0 +1,94 @@
+.about-section{
+margin-top: 105px;
+margin-bottom: 105px;
+margin-left: 10px;
+}
+
+.aboutTitle{
+margin-bottom: 15px;
+font-size: 40px!important;
+font-family: 'Caveat', cursive;
+color: #6bb8d8;
+}
+
+.aboutText{
+    color: #78cf86;
+    font-size: 18px!important;
+}
+
+/* Responsive */
+/* دسکتاپ بزرگ */
+@media (min-width: 1280px) {
+  .about-section {
+    max-width: 1000px;
+    margin: 120px auto;
+    text-align: left; 
+  }
+  .aboutTitle {
+    font-size: 44px !important;
+  }
+  .aboutText {
+    font-size: 20px !important;
+  }
+}
+
+/* لپ‌تاپ کوچک */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .about-section {
+    max-width: 900px;
+    margin: 100px auto;
+   text-align: left; 
+  }
+  .aboutTitle {
+    font-size: 38px !important;
+  }
+  .aboutText {
+    font-size: 18px !important;
+  }
+}
+
+/* تبلت */
+@media (max-width: 1023px) {
+  .about-section {
+    margin: 80px 40px;
+    text-align: left; 
+  }
+  .aboutTitle {
+    font-size: 40px !important;
+  }
+  .aboutText {
+    font-size: 19px !important;
+  }
+}
+
+/* موبایل */
+@media (max-width: 767px) {
+  .about-section {
+    margin: 60px 15px;
+    margin-top: -20px;
+    text-align: left; 
+  }
+  .aboutTitle {
+    font-size: 40px !important;
+  }
+  .aboutText {
+    font-size: 18px !important;
+    line-height: 1.4;
+  }
+}
+
+/* موبایل خیلی کوچک */
+@media (max-width: 400px) {
+  .about-section {
+    margin-left: 20px;
+    margin-top: -180px;
+    text-align: left; 
+  }
+  .aboutTitle {
+    font-size: 42px !important;
+  }
+  .aboutText {
+    font-size: 13px !important;
+    line-height: 1.5;
+  }
+}

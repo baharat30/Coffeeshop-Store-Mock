@@ -1,0 +1,336 @@
+.my-color-list {
+    display: flex;
+    gap: 8px;
+    margin: 8px 0;
+    align-items: center;
+}
+
+
+.color-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 80%;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.cartBb {
+    background-color: #d4a373;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 400px;
+}
+
+.color-dot:hover {
+    transform: scale(1.2);
+}
+
+.myshop-container {
+    padding: 40px 20px;
+    max-width: 1000px;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 60px;
+}
+
+.myshop-container h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    color: #3d0808;
+    color: var(--heading-color);
+    font-family: 'Sacramento', cursive;
+}
+
+section {
+    margin-bottom: 40px;
+    margin-top: 0px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: antiquewhite;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #3d0808;
+    border-bottom: 2px solid #e0cdd5;
+    padding-bottom: 5px;
+}
+
+.myshop-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.myshop-product:last-child {
+    border-bottom: none;
+}
+
+.myshop-product h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.myshop-product h3:hover {
+    transform: scale(1.05);
+}
+
+.myshop-product p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #666;
+    justify-content: center;
+}
+
+.myshop-product span {
+    font-weight: bold;
+    color: #5c2c2c;
+    font-size: 16px;
+}
+
+.myshop-product img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background-color: f5f0e6;
+    margin-right: 20px;
+    transition: transform 0.8s ease;
+}
+
+.myshop-product img:hover {
+    transform: scale(1.2);
+}
+
+.myshop-product button {
+    background-color: #d4a373;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-left: 15px;
+}
+
+.myshop-product button:hover {
+    background-color: #b2763c;
+}
+
+
+.dark .myshop-product h3 {
+    color: #f3aeae;
+}
+
+.dark .myshop-product span {
+    color: #ffcc99;
+}
+
+.dark .myshop-product p {
+    color: #c5ebc6;
+}
+
+.dark section h2 {
+    color: #c5ebc6;
+}
+
+body.dark .myshop-product img {
+    background-color: #3c2018;
+}
+
+/* Responsive */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  h1 {
+    font-size: 2rem;
+ }
+
+  .item-description {
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (min-width: 991px) and (max-width: 1024px) {
+      .myshop-product {
+    background: #fff;             
+    border-radius: 8px;        
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15); 
+    padding: 12px;         
+  }
+      .myshop-container h1 {
+        font-size: 30px;
+        justify-content: center;
+    }
+
+    .products-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .myshop-product {
+        flex: 1 1 calc(50% - 20px);
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .myshop-product img {
+        margin-bottom: 19px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .myshop-product button {
+        margin: 10px 0 0 0;
+    }
+
+    .myshop-container h1 {
+        font-size: 35px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 991px) {
+    .products-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .myshop-product {
+        flex: 1 1 calc(50% - 20px); 
+        background-color: #fff;  
+        border-radius: 8px;
+        padding: 10px;
+        margin: 10px 0;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .myshop-product img {
+        margin-bottom: 10px;
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    .myshop-product button {
+        margin-top: 10px;
+    }
+     .myshop-container h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .products-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px; 
+    }
+
+    .myshop-product {
+        flex: 1 1 calc(50% - 6px); 
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 4px; 
+        margin: 3px 0; 
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .myshop-product img {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 4px;
+    }
+
+    .myshop-product h3 {
+        font-size: 12px;
+        margin: 2px 0;
+    }
+
+    .myshop-product p {
+        font-size: 10px;
+        margin: 2px 0;
+    }
+
+    .myshop-product span {
+        font-size: 12px;
+    }
+
+    .myshop-product button {
+        padding: 4px 8px;
+        font-size: 9px;
+        margin-top: 4px;
+    }
+    .myshop-container h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+  .myshop-product {
+    flex: 1 1 100%;
+    max-width: 80%; 
+    margin: 5px auto;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: #fff;
+  }
+
+    .myshop-product img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 6px;
+    }
+
+    .myshop-product h3 {
+        font-size: 14px;
+    }
+
+    .myshop-product p {
+        font-size: 12px;
+    }
+
+    .myshop-product span {
+        font-size: 13px;
+    }
+
+    .myshop-product button {
+        padding: 6px 10px;
+        font-size: 10px;
+        margin-top: 6px;
+    }
+      .myshop-container h1 {
+        font-size: 19px;
+    }
+   section h2 {
+        font-size: 20px !important; 
+        text-align: center;   
+    }
+
+}
+
+
